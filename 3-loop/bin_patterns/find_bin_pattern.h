@@ -16,7 +16,6 @@ char find_bin_pattern(int number){
             cnt++;
             arr[i] = 0;
             arr[i+1] = 0;
-            arr[i+2] = 0;
 
         }
     }
