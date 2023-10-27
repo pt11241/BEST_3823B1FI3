@@ -3,6 +3,8 @@ bool point_in_rectangle(double x, double y) {
 }
 
 bool point_in_square(double x, double y) {
+
+    
     return false; // Not implementation
 }
 
