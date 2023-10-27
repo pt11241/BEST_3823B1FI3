@@ -1,7 +1,7 @@
 int get_score(short score, int start, int stop, int now) {
     float r = score / 2, result = 0;
     int ans = 0;
-    if(now => stop){
+    if(now >= stop){
         return (score + 1) / 2; 
     } 
     if(now >= start){
