@@ -1,4 +1,5 @@
 #include <math.h>
+
 char count_max_digit(long long num){
     if (num < 0) num = fabs(num);
     long long n = num;
@@ -20,3 +21,4 @@ char count_max_digit(long long num){
     }
     return cnt;
 
+}
