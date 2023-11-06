@@ -1,6 +1,12 @@
-long long calc_row(int n, long long k){
-    if (n == 5 && k == 1){
-        return 15;
-    }
+#include<math.h>
 
+long long calc_row(int n, long long k){
+    long long ans = 0;
+    for (long long i = 1; i <= n; i++){
+        ans += i*k;
+    }
+    if (abs(ans) >= pow(2,30)){
+        return 0;
+    }
+    return ans;
 }
