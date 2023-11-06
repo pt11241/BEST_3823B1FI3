@@ -22,4 +22,5 @@ char find_digit(double number, char digit){
         i++;
     }
     return j;
+    //dpofipodiff[difp]
 }
