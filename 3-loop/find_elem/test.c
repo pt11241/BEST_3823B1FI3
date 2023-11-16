@@ -1,7 +1,6 @@
 #include "find_elem.h"
 #include "acutest.h"
 
-
 void test_find_number() {
     TEST_ASSERT(find_elem(1, 12, 4, 5) == 9);
     TEST_ASSERT(find_elem(0, 100, 5, 5) == 20);
