@@ -16,7 +16,6 @@ int determinant(int matrix[], int size){
     int sum = 0;
     int size_n = pow(size, 0.5);
     if (size_n != pow(size, 0.5)) return -404; 
-    // int flag = 1;
     for (int i = 0; i < size_n; i++){
         for (int j = 0; j < size_n; j++){
             if (size_n > 2){
