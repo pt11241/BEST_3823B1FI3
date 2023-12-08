@@ -8,8 +8,11 @@ void test_matrix_multy() {
     int right_mat_1[] = { 2, 2, 2, 2};
     int res_mat_1[] = { 4, 4, 4, 4};
 
-    int left_mat_2[] = { 1, 2, 3, 3, 2, 1};
-    int right_mat_2[] = { 1, 3, 2, 2, 3, 1};
+    int left_mat_2[] = { 1, 2, 3,
+                         3, 2, 1};
+    int right_mat_2[] = { 1, 3,
+                          2, 2,
+                          3, 1};
     int res_mat_2[] = { 14, 10, 10, 14};
 
     int left_mat_3[] = { 1, 0, 0, 0, 
