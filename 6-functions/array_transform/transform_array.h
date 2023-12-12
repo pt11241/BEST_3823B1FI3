@@ -14,7 +14,7 @@ void transform(double* array, int size, int* comands, int comands_count){
                 sr_ar += array[j]/(double)size; // c size pr
             }
             for (int j = 0; j < size; j++){
-                array[j] = pow(abs(array[j]),sr_ar);
+                array[j] = pow(fabs(array[j]),sr_ar);
             }
         }
         if (comands[i] == 4){
