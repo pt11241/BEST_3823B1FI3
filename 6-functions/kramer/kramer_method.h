@@ -8,8 +8,24 @@ int det23(int* arr, int size){
 
 
 double kramer_method(int* matrix, int* vector, int size){
-    int det = det23(matrix,size);
-    if (det = 0) return 0;
-    for 
-    return 100;
+    double det = det23(matrix,size);
+    // if (det == 0) return 0;
+    int n = pow(size,0.5);
+    int new_matrix[size];
+    for (int i = 0; i < size; i++){
+        new_matrix[i] = matrix[i];
+    }
+
+    double sum = 0;
+    for (int i = 0; i < n; i++){
+        for (int i = 0; i < size; i++){
+            matrix[i] = new_matrix[i];
+        }
+        for (int j = 0; j < n; j++){
+            matrix[j * n + i] = vector[j];
+        }
+        double f = det23(matrix, size);
+        sum += f / det;
+    }
+    return sum;
 }
