@@ -6,7 +6,7 @@ void transform(double* array, int size, int* comands, int comands_count){
             for (int j = 0; j < size; j++) array[j] += 1;
         }   
         if (comands[i] == 2){
-            for (int j = 0; j < size; j++) array[j] = pow(abs(array[j]),0.5);
+            for (int j = 0; j < size; j++) array[j] = pow(fabs(array[j]),0.5);
         }
         if (comands[i] == 3){
             double sr_ar = 0;  
