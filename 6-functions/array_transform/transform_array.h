@@ -11,7 +11,7 @@ void transform(double* array, int size, int* comands, int comands_count){
         if (comands[i] == 3){
             double sr_ar = 0;  
             for (int j = 0; j < size; j++){
-                sr_ar += array[j]/(double)size; // c size pr
+                sr_ar += array[j] / size;
             }
             for (int j = 0; j < size; j++){
                 array[j] = pow(fabs(array[j]),sr_ar);
