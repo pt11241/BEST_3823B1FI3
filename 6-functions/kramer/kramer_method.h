@@ -8,8 +8,8 @@ int det23(int* arr, int size){
 
 
 double kramer_method(int* matrix, int* vector, int size){
-    double det = det23(matrix,size);
-    // if (det == 0) return 0;
+    double det = det23(matrix,pow(size,0.5));
+    if (det == 0) return -1;
     int n = pow(size,0.5);
     int new_matrix[size];
     for (int i = 0; i < size; i++){

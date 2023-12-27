@@ -4,12 +4,14 @@
 
 
 int calcsize(void* memory){
-    int cnt = 0;
-    int* a = memory;
+    char* a = memory;
     int i = 0;
-    for (int i; a[i] != 47 || a[i] != (char)47; i++){
-        cnt++;
+    while (a[i] != 47) i++;
+    int c = 0;
+    int copy = i;
+    while (a[i] != 11){
+        i--;
+        c++;
     }
-    cnt++;
-    return cnt*sizeof(a[i]);
+    return copy+c;
 }
