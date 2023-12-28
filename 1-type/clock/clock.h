@@ -8,7 +8,6 @@ int get_time(long long angle) {
         sec = hours_c % 60; 
         min = (hours_c / 60) * 100;
         return hours + min + sec;
-
     }
     else return 0;
 

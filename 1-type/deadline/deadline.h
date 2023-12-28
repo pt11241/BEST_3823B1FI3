@@ -1,15 +1,14 @@
-int get_score(short score, int start, int stop, int now) {
-    float r = score / 2, result = 0;
-    int ans = 0;
-    if(now >= stop){
-        return (score + 1) / 2; 
-    } 
-    if(now >= start){
+int get_score(short score, int start, int stop, int now){
+    if (now <= start){
         return score;
     }
-    else{
-        result = r / (stop - start) * (now - start) + 0.15;
-        ans = score - (int)result;
+    else if(now >= start && now <= stop){
+        double score_2 = ((double)score / 2);
+        double ubivanie_v_chas = score_2 / (stop - start);
+        int ubilo = ubivanie_v_chas * (now-start);
+        return score - ubilo;
     }
-    return ans;
+    else{
+        return (score / 2) + (score % 2);
+    }
 }
